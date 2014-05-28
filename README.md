@@ -17,7 +17,7 @@ Installation
 If using Composer, add our package to your `composer.json` and run `composer update`.
 
 	"require": {
-		"plainmark/sdk-php": "1.0.*"
+		"plainmark/sdk-php": "dev-master"
 	}
 	
 Otherwise, you can simply include `plainmark.php` file into your source code.
