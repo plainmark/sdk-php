@@ -1,0 +1,10 @@
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Plainmark\Plainmark;
+use Plainmark\App;
+
+$plainmark = new Plainmark('demo', 'demo');
+$id = $plainmark->find('com.example');
+var_dump($id);

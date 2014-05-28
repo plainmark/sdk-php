@@ -1,0 +1,19 @@
+{
+    "name": "plainmark/sdk-php",
+    "description": "Plainmark SDK provides access to the Plainmark Analytical Engine",
+	"version": "1.0.4",
+	"homepage": "http://plainmark.com",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Dennis Prochko",
+            "email": "dennis.prochko@plainmark.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+		"files": ["lib/plainmark.php"]
+    }
+}

@@ -1,0 +1,233 @@
+usesPersonalData		0	0	personalData	Application doesn't send any personal data to a remote location.	TRUE
+usesPersonalData		1	0	personalData	Application collects some personal data and sends it to a remote location.	FALSE
+usesPersonalData	microphone	0	30	personalData	Application does not send any data recorded from device's microphone to a remote location.	FALSE
+usesPersonalData	microphone	1	0	personalData	Application sends data recorded from the device's microphone to a remote location.	TRUE
+isPersonalDataRequired	microphone	yes	9	personalData	Sending microphone data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	microphone	no	-100	personalData	Sending microphone data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	microphone	optional	6	personalData	Sending microphone data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	microphone	none	-100	personalData	Sending of microphone data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	microphone	request	12	personalData	Sending of microphone data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	microphone	agreement	6	personalData	Use of microphone data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	microphone	expected	12	personalData	Sending of microphone data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	microphone	compliant	9	personalData	Sending of microphone data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	microphone	ignorable	-300	personalData	Application ignores user's decision not to send microphone data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	microphone	invalid	-100	personalData	Application leaks microphone data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	camera	0	30	personalData	Application does not send any data recorded from device's camera to a remote location.	FALSE
+usesPersonalData	camera	1	0	personalData	Application sends data recorded from the device's camera to a remote location.	TRUE
+isPersonalDataRequired	camera	yes	9	personalData	Sending camera data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	camera	no	-100	personalData	Sending camera data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	camera	optional	6	personalData	Sending camera data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	camera	none	-100	personalData	Sending of camera data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	camera	request	12	personalData	Sending of camera data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	camera	agreement	6	personalData	Use of camera data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	camera	expected	12	personalData	Sending of camera data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	camera	compliant	9	personalData	Sending of camera data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	camera	ignorable	-300	personalData	Application ignores user's decision not to send camera data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	camera	invalid	-100	personalData	Application leaks camera data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	coarse_location	0	20	personalData	Application does not send device's approximate location to any remote IP.	FALSE
+usesPersonalData	coarse_location	1	0	personalData	Application sends device's approximate location to a remote IP.	TRUE
+isPersonalDataRequired	coarse_location	yes	6	personalData	Sending approximate location to a remote IP is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	coarse_location	no	-80	personalData	Sending approximate location to a remote IP is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	coarse_location	optional	4	personalData	Sending approximate location to a remote IP is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	coarse_location	none	-50	personalData	Sending of approximate location to a remote IP is unexpected.	TRUE
+getPersonalDataPolicy	coarse_location	request	8	personalData	Sending of approximate location to a remote IP is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	coarse_location	agreement	4	personalData	Use of approximate location is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	coarse_location	expected	8	personalData	Sending of approximate location to a remote IP is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	coarse_location	compliant	6	personalData	Sending of approximate location to a remote IP depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	coarse_location	ignorable	-300	personalData	Application ignores user's decision not to send approximate location to a remote IP.	TRUE
+getPersonalDataPolicyCompliance	coarse_location	invalid	-50	personalData	Application leaks approximate location to a remote IP before user is given a chance to opt in or out.	TRUE
+usesPersonalData	gps_location	0	30	personalData	Application does not send device's GPS location to any remote IP.	FALSE
+usesPersonalData	gps_location	1	0	personalData	Application sends device's GPS location to a remote IP.	TRUE
+isPersonalDataRequired	gps_location	yes	9	personalData	Sending GPS location to a remote IP is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	gps_location	no	-100	personalData	Sending GPS location to a remote IP is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	gps_location	optional	6	personalData	Sending GPS location to a remote IP is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	gps_location	none	-100	personalData	Sending of GPS location to a remote IP is unexpected.	TRUE
+getPersonalDataPolicy	gps_location	request	12	personalData	Sending of GPS location to a remote IP is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	gps_location	agreement	6	personalData	Use of GPS location is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	gps_location	expected	12	personalData	Sending of GPS location to a remote IP is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	gps_location	compliant	9	personalData	Sending of GPS location to a remote IP depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	gps_location	ignorable	-300	personalData	Application ignores user's decision not to send GPS location to a remote IP.	TRUE
+getPersonalDataPolicyCompliance	gps_location	invalid	-100	personalData	Application leaks GPS location to a remote IP before user is given a chance to opt in or out.	TRUE
+usesPersonalData	accelerometer	0	20	personalData	Application does not send any data recorded from device's accelerometer to a remote location.	FALSE
+usesPersonalData	accelerometer	1	0	personalData	Application sends data recorded from the device's accelerometer to a remote location.	TRUE
+isPersonalDataRequired	accelerometer	yes	6	personalData	Sending accelerometer data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	accelerometer	no	-80	personalData	Sending accelerometer data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	accelerometer	optional	4	personalData	Sending accelerometer data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	accelerometer	none	-50	personalData	Sending of accelerometer data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	accelerometer	request	8	personalData	Sending of accelerometer data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	accelerometer	agreement	4	personalData	Use of accelerometer data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	accelerometer	expected	8	personalData	Sending of accelerometer data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	accelerometer	compliant	6	personalData	Sending of accelerometer data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	accelerometer	ignorable	-300	personalData	Application ignores user's decision not to send accelerometer data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	accelerometer	invalid	-50	personalData	Application leaks accelerometer data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	imei	0	10	personalData	Application does not send device's IMEI code to a remote location.	FALSE
+usesPersonalData	imei	1	0	personalData	Application sends device's IMEI code to a remote location.	TRUE
+isPersonalDataRequired	imei	yes	3	personalData	Sending IMEI code to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	imei	no	-40	personalData	Sending IMEI code to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	imei	optional	2	personalData	Sending IMEI code to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	imei	none	-50	personalData	Sending of IMEI code to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	imei	request	4	personalData	Sending of  IMEI code to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	imei	agreement	2	personalData	Use of  IMEI code is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	imei	expected	4	personalData	Sending of  IMEI code to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	imei	compliant	3	personalData	Sending of  IMEI code to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	imei	ignorable	-300	personalData	Application ignores user's decision not to send  IMEI code to a remote location.	TRUE
+getPersonalDataPolicyCompliance	imei	invalid	-50	personalData	Application leaks  IMEI code to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	imsi	0	10	personalData	Application does not send device's IMSI code to a remote location.	FALSE
+usesPersonalData	imsi	1	0	personalData	Application sends device's IMSI code to a remote location.	TRUE
+isPersonalDataRequired	imsi	yes	3	personalData	Sending IMSI code to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	imsi	no	-40	personalData	Sending IMSI code to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	imsi	optional	2	personalData	Sending IMSI code to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	imsi	none	-50	personalData	Sending of IMSI code to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	imsi	request	4	personalData	Sending of  IMSI code to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	imsi	agreement	2	personalData	Use of  IMSI code is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	imsi	expected	4	personalData	Sending of  IMSI code to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	imsi	compliant	3	personalData	Sending of  IMSI code to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	imsi	ignorable	-300	personalData	Application ignores user's decision not to send  IMSI code to a remote location.	TRUE
+getPersonalDataPolicyCompliance	imsi	invalid	-50	personalData	Application leaks  IMSI code to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	iccid	0	10	personalData	Application does not send device's ICCID code to a remote location.	FALSE
+usesPersonalData	iccid	1	0	personalData	Application sends device's ICCID code to a remote location.	TRUE
+isPersonalDataRequired	iccid	yes	3	personalData	Sending ICCID code to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	iccid	no	-40	personalData	Sending ICCID code to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	iccid	optional	2	personalData	Sending ICCID code to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	iccid	none	-50	personalData	Sending of ICCID code to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	iccid	request	4	personalData	Sending of  ICCID code to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	iccid	agreement	2	personalData	Use of  ICCID code is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	iccid	expected	4	personalData	Sending of  ICCID code to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	iccid	compliant	3	personalData	Sending of  ICCID code to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	iccid	ignorable	-300	personalData	Application ignores user's decision not to send  ICCID code to a remote location.	TRUE
+getPersonalDataPolicyCompliance	iccid	invalid	-50	personalData	Application leaks  ICCID code to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	serial_number	0	10	personalData	Application does not send device's serial number to a remote location.	FALSE
+usesPersonalData	serial_number	1	0	personalData	Application sends device's serial number to a remote location.	TRUE
+isPersonalDataRequired	serial_number	yes	3	personalData	Sending serial number to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	serial_number	no	-40	personalData	Sending serial number to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	serial_number	optional	2	personalData	Sending serial number to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	serial_number	none	-50	personalData	Sending of serial number to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	serial_number	request	4	personalData	Sending of  serial number to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	serial_number	agreement	2	personalData	Use of  serial number is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	serial_number	expected	4	personalData	Sending of  serial number to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	serial_number	compliant	3	personalData	Sending of  serial number to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	serial_number	ignorable	-300	personalData	Application ignores user's decision not to send  serial number to a remote location.	TRUE
+getPersonalDataPolicyCompliance	serial_number	invalid	-50	personalData	Application leaks  serial number to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	phone_number	0	20	personalData	Application does not send user's phone number to a remote location.	FALSE
+usesPersonalData	phone_number	1	0	personalData	Application sends user's phone number to a remote location.	TRUE
+isPersonalDataRequired	phone_number	yes	6	personalData	Sending user's phone number to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	phone_number	no	-80	personalData	Sending user's phone number to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	phone_number	optional	4	personalData	Sending user's phone number to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	phone_number	none	-50	personalData	Sending of user's phone number to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	phone_number	request	8	personalData	Sending of user's phone number to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	phone_number	agreement	4	personalData	Use of  user's phone number is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	phone_number	expected	8	personalData	Sending of  user's phone number to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	phone_number	compliant	6	personalData	Sending of  user's phone number to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	phone_number	ignorable	-300	personalData	Application ignores user's decision not to send user's phone number to a remote location.	TRUE
+getPersonalDataPolicyCompliance	phone_number	invalid	-50	personalData	Application leaks user's phone number to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	sms	0	40	personalData	Application does not send user's SMS data to a remote location.	FALSE
+usesPersonalData	sms	1	0	personalData	Application sends user's SMS data to a remote location.	TRUE
+isPersonalDataRequired	sms	yes	12	personalData	Sending SMS data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	sms	no	-100	personalData	Sending SMS data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	sms	optional	8	personalData	Sending SMS data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	sms	none	-200	personalData	Sending of SMS data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	sms	request	16	personalData	Sending of  SMS data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	sms	agreement	8	personalData	Use of  SMS data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	sms	expected	16	personalData	Sending of  SMS data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	sms	compliant	12	personalData	Sending of  SMS data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	sms	ignorable	-300	personalData	Application ignores user's decision not to send SMS data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	sms	invalid	-200	personalData	Application leaks SMS data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	contacts	0	40	personalData	Application does not send user's contacts data to a remote location.	FALSE
+usesPersonalData	contacts	1	0	personalData	Application sends user's contacts data to a remote location.	TRUE
+isPersonalDataRequired	contacts	yes	12	personalData	Sending contacts data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	contacts	no	-100	personalData	Sending contacts data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	contacts	optional	8	personalData	Sending contacts data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	contacts	none	-200	personalData	Sending of contacts data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	contacts	request	16	personalData	Sending of  contacts data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	contacts	agreement	8	personalData	Use of  contacts data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	contacts	expected	16	personalData	Sending of  contacts data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	contacts	compliant	12	personalData	Sending of  contacts data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	contacts	ignorable	-300	personalData	Application ignores user's decision not to send  contacts data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	contacts	invalid	-200	personalData	Application leaks  contacts data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	calls	0	30	personalData	Application does not send user's calls history to a remote location.	FALSE
+usesPersonalData	calls	1	0	personalData	Application sends user's calls history to a remote location.	TRUE
+isPersonalDataRequired	calls	yes	9	personalData	Sending calls history to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	calls	no	-100	personalData	Sending calls history to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	calls	optional	6	personalData	Sending calls history to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	calls	none	-100	personalData	Sending of calls history to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	calls	request	12	personalData	Sending of  calls history to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	calls	agreement	6	personalData	Use of  calls history is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	calls	expected	12	personalData	Sending of  calls history to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	calls	compliant	9	personalData	Sending of  calls history to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	calls	ignorable	-300	personalData	Application ignores user's decision not to send  calls history to a remote location.	TRUE
+getPersonalDataPolicyCompliance	calls	invalid	-100	personalData	Application leaks  calls history to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	browser	0	20	personalData	Application does not send user's browser data like history and bookmarks to a remote location.	FALSE
+usesPersonalData	browser	1	0	personalData	Application sends user's browser data like history and bookmarks to a remote location.	TRUE
+isPersonalDataRequired	browser	yes	6	personalData	Sending browser data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	browser	no	-80	personalData	Sending browser data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	browser	optional	4	personalData	Sending browser data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	browser	none	-50	personalData	Sending of browser data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	browser	request	8	personalData	Sending of  browser data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	browser	agreement	4	personalData	Use of  browser data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	browser	expected	8	personalData	Sending of  browser data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	browser	compliant	6	personalData	Sending of  browser data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	browser	ignorable	-300	personalData	Application ignores user's decision not to send  browser data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	browser	invalid	-50	personalData	Application leaks  browser data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	accounts	0	20	personalData	Application does not send user's accounts data to a remote location.	FALSE
+usesPersonalData	accounts	1	0	personalData	Application sends user's accounts data to a remote location.	TRUE
+isPersonalDataRequired	accounts	yes	6	personalData	Sending user's accounts data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	accounts	no	-80	personalData	Sending user's accounts data to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	accounts	optional	4	personalData	Sending user's accounts data to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	accounts	none	-50	personalData	Sending of user's accounts data to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	accounts	request	8	personalData	Sending of  user's accounts data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	accounts	agreement	4	personalData	Use of  user's accounts data is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	accounts	expected	8	personalData	Sending of user's accounts data to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	accounts	compliant	6	personalData	Sending of user's accounts data to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	accounts	ignorable	-300	personalData	Application ignores user's decision not to send user's accounts data to a remote location.	TRUE
+getPersonalDataPolicyCompliance	accounts	invalid	-50	personalData	Application leaks  user's accounts data to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	files	0	30	personalData	Application does not send user's files to a remote location.	FALSE
+usesPersonalData	files	1	0	personalData	Application sends user's files to a remote location.	TRUE
+isPersonalDataRequired	files	yes	9	personalData	Sending user's files to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	files	no	-100	personalData	Sending user's files to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	files	optional	6	personalData	Sending user's files to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	files	none	-100	personalData	Sending of user's files to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	files	request	12	personalData	Sending of user's files to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	files	agreement	6	personalData	Use of user's files is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	files	expected	12	personalData	Sending of user's files to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	files	compliant	9	personalData	Sending of user's files to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	files	ignorable	-300	personalData	Application ignores user's decision not to send user's files to a remote location.	TRUE
+getPersonalDataPolicyCompliance	files	invalid	-100	personalData	Application leaks  user's files to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	media	0	30	personalData	Application does not send user's media to a remote location.	FALSE
+usesPersonalData	media	1	0	personalData	Application sends user's media to a remote location.	TRUE
+isPersonalDataRequired	media	yes	9	personalData	Sending user's media to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	media	no	-100	personalData	Sending user's media to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	media	optional	6	personalData	Sending user's media to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	media	none	-100	personalData	Sending of user's media to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	media	request	12	personalData	Sending of  user's media to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	media	agreement	6	personalData	Use of user's media is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	media	expected	12	personalData	Sending of user's media to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	media	compliant	9	personalData	Sending of user's media to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	media	ignorable	-300	personalData	Application ignores user's decision not to send user's media to a remote location.	TRUE
+getPersonalDataPolicyCompliance	media	invalid	-100	personalData	Application leaks  user's media to a remote location before user is given a chance to opt in or out.	TRUE
+isPermissionRequired		0	-60	permissions	Application requests some  system permission(s), that is (are) not really required.	TRUE
+isPermissionRequired		1	0	permissions	Application doesn't request any system permissions that are not really required.	TRUE
+usesSDK	advertising	0	30	advertising	This application does not contain any advertising.	TRUE
+usesSDK	advertising	1	0	advertising	This application is ad supported.	TRUE
+notifiedAboutSDK	advertising	0	-10	advertising	Application uses advertising without including a clear warning about it in the app's description.	TRUE
+notifiedAboutSDK	advertising	1	25	advertising	A clear warning about advertising used in this app is included in the app's description.	TRUE
+getSDKUseType	advertising,banner	1	0	advertising	It uses banner ads.	TRUE
+getSDKUseType	advertising,fullscreen	1	0	advertising	It uses full screen ads.	TRUE
+getSDKUseType	advertising,notification	1	0	advertising	It uses push notifications.	TRUE
+getSDKUseType	advertising,audio	1	0	advertising	It uses audio ads.	TRUE
+getSDKUseType	advertising,video	1	0	advertising	It uses video ads.	TRUE
+usesSDK	payments	0	10	payments	This application does not utilize in-app payments methods.	TRUE
+usesSDK	payments	1	0	payments	This application utilizes in-app payments methods.	TRUE
+notifiedAboutSDK	payments	0	0	payments	Application uses in-app payments without including a clear warning about it in the app's description.	TRUE
+notifiedAboutSDK	payments	1	10	payments	A clear warning about in-app payments used in this app is included in the app's description	TRUE
+usesSDK	social	0	5	social	This application does not utilize social API(s).	TRUE
+usesSDK	social	1	0	social	This application utilizes some social API(s).	TRUE
+notifiedAboutSDK	social	0	0	social	Application doesn't include a clear explanation of social API(s) use in the app's description.	TRUE
+notifiedAboutSDK	social	1	5	social	A clear warning about social API(s) used in this app is included in the app's description.	TRUE
+usesSDK	cloud	0	3	cloud	This application does not utilize 3d party cloud data storage and processing.	FALSE
+usesSDK	cloud	1	0	cloud	This application utilizes some 3d party cloud data storage or processing.	FALSE
+notifiedAboutSDK	cloud	0	0	cloud	Application doesn't include a clear explanation of cloud API(s) use in the app's description.	FALSE
+notifiedAboutSDK	cloud	1	3	cloud	A clear warning about cloud API(s) used in this app is included in the app's description.	FALSE
+usesSDK	analytics	0	0	analytics	This application does not utilize 3d party analytic services.	FALSE
+usesSDK	analytics	1	0	analytics	This application utilizes some 3d party analytic service(s).	FALSE
+notifiedAboutSDK	analytics	0	0	analytics	Application doesn't include a clear explanation of analytic service(s) use in the app's description.	FALSE
+notifiedAboutSDK	analytics	1	0	analytics	A clear warning about analytic service(s) used in this app is included in the app's description.	FALSE

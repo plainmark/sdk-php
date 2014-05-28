@@ -1,0 +1,19 @@
+2014-05-28  Dennis Prochko <dennis.prochko@plainmark.com>
+
+	* README.md
+	  Documentation update
+
+	* lib/plainmark.php:
+	  The minimum number of stars that application can achieved is set to 1
+	  instead of zero
+
+2014-05-28  Dennis Prochko <dennis.prochko@plainmark.com>
+
+	* lib/config.csv, lib/plainmark.php:
+	  Some text messages were changed
+
+2014-05-27  Dennis Prochko <dennis.prochko@plainmark.com>
+
+	* lib/config.csv:
+	  Some text messages were changed
+
