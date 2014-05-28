@@ -80,20 +80,25 @@ The library uses exceptions in case of errors - use try-catch when needed.
 Tuning parameters
 -----------------
 
-You can customize the analysis interpretation. Use `config.csv` to change the
-analysis description and its score.
+You can customize interpretation of the app analysis. Use `config.csv` to change 
+the analysis description and its score. 
 
-`config.csv` is a tab delimited sheet file. The file contains a number of conditions,
-every condition is one line. Every line defines a string in the analysis description
-and the number of points to add to the score calculation,
+`config.csv` is a tab delimited sheet file. The file contains a number of 
+conditions, every condition is on one line. Every line defines a string in the analysis 
+description and the number of points to add to the score calculation, 
 should the condition in the given line be satisfied.
 
-**PLEASE NEVER CHANGE THE FIELDS ONE, TWO and THREE**. These columns are used for the internal purposes only.
+**PLEASE NEVER CHANGE THE FIELDS ONE, TWO and THREE**. These columns are 
+used for the internal purposes only.
 
-The rest of the field are:
+The rest of the fields are:
 
-*	**Field 4**. Number of points in the calculation of the score.
-*	**Field 5**. Rule Category. It's used to define whether to use or not the descriptive string while calling the function getAnnotations with a $category argument. 
-*	**Field 6**. Annotation string. All the strings in lines where the condition is satisfied are added to the analysis description in an order from top to bottom. Can be filtered with Rule Category and Annotation Use.
-*	**Field 7**. Annotation Use. Defines whether to use this string while building the description or not.
+*	**Field 4**. Number of points used in the calculation of the score. 
+*	**Field 5**. Rule Category. It's used to define whether to use or not the 
+descriptive string while calling the function getAnnotations with a $category argument.  
+*	**Field 6**. Annotation String. All the strings in lines where the 
+condition is satisfied are added to the analysis description in order of 
+top to bottom. Can be filtered with Rule Category and Annotation Use.
+*	**Field 7**. Annotation Use. Defines whether to use this string while 
+building the analysis description.
 
