@@ -4,6 +4,9 @@ namespace Plainmark;
 
 require_once 'app.php';
 
+class Exception extends \Exception {
+}
+
 class Plainmark {
 
 	/**
@@ -55,6 +58,7 @@ class Plainmark {
 		if (!$file)
 			throw new Exception("Can't read file {$apk}");
 
+		$divider = '--------------------3jd3ft5r4pEREGEhewwue5jyhtq3t23y4y3t3';
 		$encoded_data = $this->multipart_build_query($args, array(
 			array(
 				'name' => 'apk',
@@ -62,13 +66,13 @@ class Plainmark {
 				'content_type' => 'application/vnd.android.package-archive',
 				'content' => $file
 			)
-		));
+		), $divider);
 
 		$context  = stream_context_create(array('http' => array(
 			'method' => 'POST',
 			'header'=>
 				"Authorization: Basic {$this->credentials}\r\n" .
-				"Content-Type: multipart/form-data; boundary=divider\r\n",
+				"Content-Type: multipart/form-data; boundary={$divider}\r\n",
 			'content' => $encoded_data
 		)));
 
@@ -278,9 +282,8 @@ class Plainmark {
 		foreach ($files as $file) {
 			$retval .= "--{$boundary}\r\n";
 			$retval .= "Content-Disposition: form-data; name=\"{$file['name']}\"; filename=\"{$file['filename']}\"\r\n";
-			$retval .= "Content-Type: {$file['content_type']}\r\n";
-			$retval .= "Content-Transfer-Encoding: base64\r\n\r\n";
-			$retval .= chunk_split(base64_encode($file['content']));
+			$retval .= "Content-Type: {$file['content_type']}\r\n\r\n";
+			$retval .= $file['content'] . "\r\n";
 		}
 
 		$retval .= "--{$boundary}--\r\n";
