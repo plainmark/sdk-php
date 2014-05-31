@@ -1,3 +1,8 @@
+2014-05-31  Dennis Prochko <dennis.prochko@plainmark.com>
+
+	* lib/plainmark.php:
+	  Bugfix - the submit() method should not encode the file with base64
+
 2014-05-28  Dennis Prochko <dennis.prochko@plainmark.com>
 
 	* README.md
