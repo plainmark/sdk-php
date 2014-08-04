@@ -160,8 +160,11 @@ class Plainmark {
 		reset($config);
 
 		foreach($config as $item) {
-			if ($app->$item[Plainmark::COLUMN_FUNCTION]($item[Plainmark::COLUMN_ARGS]) == $item[Plainmark::COLUMN_VALUE])
+			if ($app->$item[Plainmark::COLUMN_FUNCTION]($item[Plainmark::COLUMN_ARGS]) == $item[Plainmark::COLUMN_VALUE]) {
+				if (defined('DEBUG'))
+					echo "{$item[Plainmark::COLUMN_FUNCTION]}({$item[Plainmark::COLUMN_ARGS]}) = {$item[Plainmark::COLUMN_VALUE]} ? {$item[Plainmark::COLUMN_SCORE]}\n";
 				$score += (int)$item[Plainmark::COLUMN_SCORE];
+			}
 		}
 
 		if ($score < 0)
@@ -258,8 +261,9 @@ class Plainmark {
 			if (strlen($line[0]) > 0) {
 				$this->_config[] = $line;
 				$score = (int)$line[Plainmark::COLUMN_SCORE];
-				if ($score > 0)
-					$this->totalScore += $score;
+				if (($line[Plainmark::COLUMN_FUNCTION] == 'usesPersonalData' || $line[Plainmark::COLUMN_FUNCTION] == 'usesSDK') &&
+					($line[Plainmark::COLUMN_VALUE] == '0'))
+						$this->totalScore += $score;
 			}
 		}
 
