@@ -170,7 +170,8 @@ class Plainmark {
 		if ($score < 0)
 			$score = 0;
 
-		$stars = (int) round($score / ($this->totalScore / 2));
+		//$stars = (int) round($score / ($this->totalScore / 2));
+		$stars = (int) round($score * 5 / $this->totalScore);
 		if ($stars < 1)
 			$stars = 1;
 
