@@ -4,7 +4,7 @@ usesPersonalData	microphone	0	20	personalData	Application does not send any data
 usesPersonalData	microphone	1	0	personalData	Application sends data recorded from the device's microphone to a remote location.	TRUE
 isPersonalDataRequired	microphone	yes	10	personalData	Sending microphone data to a remote location is required for application's functions as stated in the application's description.	TRUE
 isPersonalDataRequired	microphone	no	-20	personalData	Sending microphone data to a remote location is not required for application's functions according to the application's description.	TRUE
-isPersonalDataRequired	microphone	optional	6	personalData	Sending microphone data to a remote location is not required for application's functions  according to the application's description, however it may provide additional benefits.	TRUE
+isPersonalDataRequired	microphone	optional	8	personalData	Sending microphone data to a remote location is not required for application's functions  according to the application's description, however it may provide additional benefits.	TRUE
 getPersonalDataPolicy	microphone	none	-20	personalData	Sending microphone data to a remote location is unexpected.	TRUE
 getPersonalDataPolicy	microphone	request	10	personalData	Sending microphone data to a remote location is explicitly prompted by the application.	TRUE
 getPersonalDataPolicy	microphone	agreement	6	personalData	Use of microphone data is mentioned in user agreement that has to be accepted the first time the app is run.	TRUE
@@ -84,19 +84,19 @@ getPersonalDataPolicy	browser	expected	4	personalData	Sending browser data to a 
 getPersonalDataPolicyCompliance	browser	compliant	0	personalData	Sending browser data to a remote location depends on user's permission.	TRUE
 getPersonalDataPolicyCompliance	browser	ignorable	-40	personalData	Application ignores user's decision not to send browser data to a remote location.	TRUE
 getPersonalDataPolicyCompliance	browser	invalid	-30	personalData	Application leaks browser data to a remote location before user is given a chance to opt in or out.	TRUE
-usesSDK	advertising	0	10	advertising	The analysis did not reveal the use of any third-party advertising technologies.	TRUE
+usesSDK	advertising	0	11	advertising	The analysis did not reveal the use of any third-party advertising technologies.	TRUE
 usesSDK	advertising	1	0	advertising	This application is ad supported.	TRUE
 notifiedAboutSDK	advertising	0	0	advertising	Application uses advertising without including a clear warning about it in the app's description.	TRUE
-notifiedAboutSDK	advertising	1	5	advertising	A clear warning about advertising used in this app is included in the app's description.	TRUE
+notifiedAboutSDK	advertising	1	6	advertising	A clear warning about advertising used in this app is included in the app's description.	TRUE
 getSDKUseType	advertising,banner	1	0	advertising	It uses banner ads.	TRUE
 getSDKUseType	advertising,fullscreen	1	0	advertising	It uses full screen ads.	TRUE
 getSDKUseType	advertising,notification	1	0	advertising	It uses push notifications.	TRUE
 getSDKUseType	advertising,audio	1	0	advertising	It uses audio ads.	TRUE
 getSDKUseType	advertising,video	1	0	advertising	It uses video ads.	TRUE
-usesSDK	payments	0	5	payments	The analysis did not reveal the use of any third-party payment SDKs.	TRUE
+usesSDK	payments	0	4	payments	The analysis did not reveal the use of any third-party payment SDKs.	TRUE
 usesSDK	payments	1	0	payments	This application utilizes in-app payments methods.	TRUE
 notifiedAboutSDK	payments	0	0	payments	Application uses in-app payments without including a clear warning about it in the app's description.	TRUE
-notifiedAboutSDK	payments	1	5	payments	A clear warning about in-app payments used in this app is included in the app's description.	TRUE
+notifiedAboutSDK	payments	1	4	payments	A clear warning about in-app payments used in this app is included in the app's description.	TRUE
 usesSDK	social	0	2	social	The analysis did not reveal the use of any third-party social APIs.	TRUE
 usesSDK	social	1	0	social	This application utilizes some social API(s).	TRUE
 notifiedAboutSDK	social	0	0	social	Application doesn't include a clear explanation of social API(s) use in the app's description.	TRUE
