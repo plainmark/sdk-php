@@ -1,3 +1,8 @@
+2014-08-11  Dennis Prochko <dennis.prochko@plainmark.com>
+
+	* lib/plainmark.php:
+	  Added new optional parameter to Plainmark::getAnnotations method
+
 2014-08-05  Dennis Prochko <dennis.prochko@plainmark.com>
 
 	* lib/config.csv:

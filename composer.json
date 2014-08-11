@@ -1,7 +1,7 @@
 {
     "name": "plainmark/sdk-php",
     "description": "Plainmark SDK provides access to the Plainmark Analytical Engine",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"homepage": "http://plainmark.com",
 	"license": "MIT",
     "authors": [

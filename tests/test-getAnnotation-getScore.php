@@ -8,7 +8,7 @@ use Plainmark\Plainmark;
 use Plainmark\App;
 
 $plainmark = new Plainmark('demo', 'demo');
-$app = $plainmark->getApp('536ff5aa05a7512a598b45ae');
+$app = $plainmark->getApp('53e6924e05a75137258b45c4');
 
 $score = $plainmark->getScore($app);
 echo "The package has {$score['stars']} stars with {$score['score']}/{$score['max_score']} points\n";

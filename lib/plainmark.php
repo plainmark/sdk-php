@@ -190,10 +190,11 @@ class Plainmark {
 	*
 	* @param App $app Application analysis details
 	* @param string $category Filter by category
+	* @param string $grouping Group annotations by type and return them as key-value array
 	*
 	* @return array List of features (human readable strings)
 	*/
-	function getAnnotations(App $app, $category = null) {
+	function getAnnotations(App $app, $category = null, $grouping = false) {
 
 		$annotations = array();
 		$config = $this->getConfig();
@@ -203,7 +204,10 @@ class Plainmark {
 			if ($app->$item[Plainmark::COLUMN_FUNCTION]($item[Plainmark::COLUMN_ARGS]) == $item[Plainmark::COLUMN_VALUE] &&
 					$item[Plainmark::COLUMN_USE] == 'TRUE' &&
 					(!$category || $item[Plainmark::COLUMN_CATEGORY] == $category))
-				$annotations[] = $item[Plainmark::COLUMN_TEXT];
+				if ($grouping)
+					$annotations[Plainmark::COLUMN_ARGS] = $item[Plainmark::COLUMN_TEXT];
+				else
+					$annotations[] = $item[Plainmark::COLUMN_TEXT];
 		}
 
 		return $annotations;
