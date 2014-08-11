@@ -205,7 +205,7 @@ class Plainmark {
 					$item[Plainmark::COLUMN_USE] == 'TRUE' &&
 					(!$category || $item[Plainmark::COLUMN_CATEGORY] == $category))
 				if ($grouping)
-					$annotations[Plainmark::COLUMN_ARGS] = $item[Plainmark::COLUMN_TEXT];
+					$annotations[$item[Plainmark::COLUMN_ARGS]][] = $item[Plainmark::COLUMN_TEXT];
 				else
 					$annotations[] = $item[Plainmark::COLUMN_TEXT];
 		}
