@@ -1,5 +1,5 @@
 usesPersonalData		0	0	personalData	Application doesn't send any personal data to a remote location.	TRUE
-usesPersonalData		1	0	personalData	Application collects some personal data and sends it to a remote location.	FALSE
+usesPersonalData		1	0	personalData	Application collects some personal data and sends it to a remote location.	TRUE
 usesPersonalData	microphone	0	20	personalData	Application does not send any data recorded from device's microphone to a remote location.	FALSE
 usesPersonalData	microphone	1	0	personalData	Application sends data recorded from the device's microphone to a remote location.	TRUE
 isPersonalDataRequired	microphone	yes	10	personalData	Sending microphone data to a remote location is required for application's functions as stated in the application's description.	TRUE
