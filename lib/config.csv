@@ -48,6 +48,18 @@ getPersonalDataPolicy	imei	expected	4	personalData	Sending IMEI code to a remote
 getPersonalDataPolicyCompliance	imei	compliant	0	personalData	Sending IMEI code to a remote location depends on user's permission.	TRUE
 getPersonalDataPolicyCompliance	imei	ignorable	-40	personalData	Application ignores user's decision not to send IMEI code to a remote location.	TRUE
 getPersonalDataPolicyCompliance	imei	invalid	-20	personalData	Application leaks IMEI code to a remote location before user is given a chance to opt in or out.	TRUE
+usesPersonalData	iccid	0	10	personalData	Application does not send device's ICCID code to a remote location.	FALSE
+usesPersonalData	iccid	1	0	personalData	Application sends device's ICCID code to a remote location.	TRUE
+isPersonalDataRequired	iccid	yes	3	personalData	Sending ICCID code to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	iccid	no	-40	personalData	Sending ICCID code to a remote location is not required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	iccid	optional	2	personalData	Sending ICCID code to a remote location is not required for application's functions as stated in the application's description, however it may provide additional benefits.	TRUE
+getPersonalDataPolicy	iccid	none	-50	personalData	Sending of ICCID code to a remote location is unexpected.	TRUE
+getPersonalDataPolicy	iccid	request	4	personalData	Sending of  ICCID code to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	iccid	agreement	2	personalData	Use of  ICCID code is mentioned in user agreement that has to be accepted first time the app is opened.	TRUE
+getPersonalDataPolicy	iccid	expected	4	personalData	Sending of  ICCID code to a remote location is expected implicitly in such an application.	TRUE
+getPersonalDataPolicyCompliance	iccid	compliant	3	personalData	Sending of  ICCID code to a remote location depends on user's permission.	TRUE
+getPersonalDataPolicyCompliance	iccid	ignorable	-300	personalData	Application ignores user's decision not to send  ICCID code to a remote location.	TRUE
+getPersonalDataPolicyCompliance	iccid	invalid	-50	personalData	Application leaks  ICCID code to a remote location before user is given a chance to opt in or out.	TRUE
 usesPersonalData	sms	0	10	personalData	Application does not send user's SMS data to a remote location.	FALSE
 usesPersonalData	sms	1	0	personalData	Application sends user's SMS data to a remote location.	TRUE
 isPersonalDataRequired	sms	yes	4	personalData	Sending SMS data to a remote location is required for application's functions as stated in the application's description.	TRUE

@@ -1,3 +1,11 @@
+2014-10-07  Dennis Prochko <dennis.prochko@plainmark.com>
+
+	* lib/config.csv:
+	  New personal data item iccid now influences the scoring
+
+	* lib/plainmark.php:
+	  Some changes for internal use
+
 2014-08-11  Dennis Prochko <dennis.prochko@plainmark.com>
 
 	* lib/plainmark.php:

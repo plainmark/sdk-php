@@ -76,7 +76,7 @@ class Plainmark {
 			'content' => $encoded_data
 		)));
 
-		$json = file_get_contents('http://v4.plainmark.com/app', false, $context);
+		$json = file_get_contents($this->host . '/app', false, $context);
 		if (!$json)
 			throw new Exception("File submitting failed");
 
@@ -105,7 +105,7 @@ class Plainmark {
 
 		$search_params = http_build_query(array('package_name' => $package));
 
-		$json = file_get_contents("http://v4.plainmark.com/app?{$search_params}", false, $context);
+		$json = file_get_contents($this->host . "/app?{$search_params}", false, $context);
 		if (!$json)
 			throw new Exception("The application is not found");
 
@@ -134,7 +134,7 @@ class Plainmark {
 			'header'=> "Authorization: Basic {$this->credentials}\r\n"
 		)));
 
-		$json = file_get_contents("http://v4.plainmark.com/app/{$id}", false, $context);
+		$json = file_get_contents($this->host . "/app/{$id}", false, $context);
 		if (!$json)
 			throw new Exception("Can't retrieve application details #{$id}");
 		return new App($json);
@@ -234,7 +234,7 @@ class Plainmark {
 			'header'=> "Authorization: Basic {$this->credentials}\r\n"
 		)));
 
-		$json = file_get_contents("http://v4.plainmark.com/lib", false, $context);
+		$json = file_get_contents($this->host . '/lib', false, $context);
 		if (!$json)
 			throw new Exception("Can't retrieve library descriptions");
 
@@ -301,6 +301,7 @@ class Plainmark {
 
 	}
 
+	public $host = 'http://v4.plainmark.com';
 	private $credentials;
 	private $_config;
 	private $totalScore = 0;
