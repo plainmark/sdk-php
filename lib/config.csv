@@ -1,26 +1,26 @@
 usesPersonalData		0	0	personalData	Application doesn't send any personal data to a remote location.	TRUE
 usesPersonalData		1	0	personalData	Application collects some personal data and sends it to a remote location.	TRUE
-usesPersonalData	microphone	0	20	personalData	Application does not send any data recorded from device's microphone to a remote location.	FALSE
+usesPersonalData	microphone	0	15	personalData	Application does not send any data recorded from device's microphone to a remote location.	FALSE
 usesPersonalData	microphone	1	0	personalData	Application sends data recorded from the device's microphone to a remote location.	TRUE
-isPersonalDataRequired	microphone	yes	10	personalData	Sending microphone data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	microphone	yes	8	personalData	Sending microphone data to a remote location is required for application's functions as stated in the application's description.	TRUE
 isPersonalDataRequired	microphone	no	-20	personalData	Sending microphone data to a remote location is not required for application's functions according to the application's description.	TRUE
-isPersonalDataRequired	microphone	optional	8	personalData	Sending microphone data to a remote location is not required for application's functions  according to the application's description, however it may provide additional benefits.	TRUE
+isPersonalDataRequired	microphone	optional	6	personalData	Sending microphone data to a remote location is not required for application's functions  according to the application's description, however it may provide additional benefits.	TRUE
 getPersonalDataPolicy	microphone	none	-20	personalData	Sending microphone data to a remote location is unexpected.	TRUE
-getPersonalDataPolicy	microphone	request	10	personalData	Sending microphone data to a remote location is explicitly prompted by the application.	TRUE
-getPersonalDataPolicy	microphone	agreement	6	personalData	Use of microphone data is mentioned in user agreement that has to be accepted the first time the app is run.	TRUE
-getPersonalDataPolicy	microphone	expected	10	personalData	Sending microphone data to a remote location is expected implicitly in such application.	TRUE
+getPersonalDataPolicy	microphone	request	7	personalData	Sending microphone data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	microphone	agreement	5	personalData	Use of microphone data is mentioned in user agreement that has to be accepted the first time the app is run.	TRUE
+getPersonalDataPolicy	microphone	expected	7	personalData	Sending microphone data to a remote location is expected implicitly in such application.	TRUE
 getPersonalDataPolicyCompliance	microphone	compliant	0	personalData	Sending microphone data to a remote location depends on user's permission.	TRUE
 getPersonalDataPolicyCompliance	microphone	ignorable	-40	personalData	Application ignores user's decision not to send microphone data to a remote location.	TRUE
 getPersonalDataPolicyCompliance	microphone	invalid	-30	personalData	Application leaks microphone data to a remote location before user is given a chance to opt in or out.	TRUE
-usesPersonalData	camera	0	20	personalData	Application does not send any data recorded from device's camera to a remote location.	FALSE
+usesPersonalData	camera	0	15	personalData	Application does not send any data recorded from device's camera to a remote location.	FALSE
 usesPersonalData	camera	1	0	personalData	Application sends data recorded from the device's camera to a remote location.	TRUE
-isPersonalDataRequired	camera	yes	10	personalData	Sending camera data to a remote location is required for application's functions as stated in the application's description.	TRUE
+isPersonalDataRequired	camera	yes	8	personalData	Sending camera data to a remote location is required for application's functions as stated in the application's description.	TRUE
 isPersonalDataRequired	camera	no	-20	personalData	Sending camera data to a remote location is not required for application's functions according to the application's description.	TRUE
 isPersonalDataRequired	camera	optional	6	personalData	Sending camera data to a remote location is not required for application's functions according to the application's description; however it may provide additional benefits.	TRUE
 getPersonalDataPolicy	camera	none	-20	personalData	Sending camera data to a remote location is unexpected.	TRUE
-getPersonalDataPolicy	camera	request	10	personalData	Sending camera data to a remote location is explicitly prompted by the application.	TRUE
-getPersonalDataPolicy	camera	agreement	6	personalData	Use of camera data is mentioned in user agreement that has to be accepted the first time the app is run.	TRUE
-getPersonalDataPolicy	camera	expected	10	personalData	Sending camera data to a remote location is expected implicitly in such application.	TRUE
+getPersonalDataPolicy	camera	request	7	personalData	Sending camera data to a remote location is explicitly prompted by the application.	TRUE
+getPersonalDataPolicy	camera	agreement	5	personalData	Use of camera data is mentioned in user agreement that has to be accepted the first time the app is run.	TRUE
+getPersonalDataPolicy	camera	expected	7	personalData	Sending camera data to a remote location is expected implicitly in such application.	TRUE
 getPersonalDataPolicyCompliance	camera	compliant	0	personalData	Sending camera data to a remote location depends on user's permission.	TRUE
 getPersonalDataPolicyCompliance	camera	ignorable	-40	personalData	Application ignores user's decision not to send camera data to a remote location.	TRUE
 getPersonalDataPolicyCompliance	camera	invalid	-30	personalData	Application leaks camera data to a remote location before user is given a chance to opt in or out.	TRUE
