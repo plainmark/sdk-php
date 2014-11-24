@@ -53,9 +53,14 @@ $id = $plainmark->find('com.android.example.package');
 ```
 
 ### Submit an application for analysis
+To submit an apk file:
 ```
 $id = $plainmark->submit('en-US', 'App Title', 'App description',
 	'App Vendor', '/path/to/package.apk');
+```
+To submit [AppDF](http://www.onepf.org/appdf) file:
+```
+$id = $plainmark->submitAppDF('App Vendor', '/path/to/description.appdf');
 ```
 
 ### Retrieve app analysis details

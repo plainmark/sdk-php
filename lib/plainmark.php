@@ -84,6 +84,60 @@ class Plainmark {
 		return $obj->id;
 
 	}
+
+
+	/**
+	* submitAppDF
+	*
+	* Sends an application for analysis to the Plainmark analytical engine.
+	* This method implements the Plainmark API "Sending an application for
+	* analysis" call (see API documentation for details)
+	*
+	* @param string $publisher Publisher name
+	* @param string $appdf Application Description File (AppDF) filename
+	* @param string $callback URL on the client side to be called after the
+	*                         package processing is completed
+	*
+	* @return string Application id
+	*/
+	function submitAppDF($publisher, $appdf, $callback = null) {
+
+		$args = array(
+			'publisher' => $publisher
+		);
+		if ($callback)
+			$args['callback'] = $callback;
+
+		$file = file_get_contents($appdf);
+		if (!$file)
+			throw new Exception("Can't read file {$appdf}");
+
+		$divider = '--------------------3jd3ft5r4pEREGEhewwue5jyhtq3t23y4y3t3';
+		$encoded_data = $this->multipart_build_query($args, array(
+			array(
+				'name' => 'appdf',
+				'filename' => basename($appdf),
+				'content_type' => 'application/zip',
+				'content' => $file
+			)
+		), $divider);
+
+		$context  = stream_context_create(array('http' => array(
+			'method' => 'POST',
+			'header'=>
+				"Authorization: Basic {$this->credentials}\r\n" .
+				"Content-Type: multipart/form-data; boundary={$divider}\r\n",
+			'content' => $encoded_data
+		)));
+
+		$json = file_get_contents($this->host . '/app/appdf', false, $context);
+		if (!$json)
+			throw new Exception("File submitting failed");
+
+		$obj = json_decode($json);
+		return $obj->id;
+
+	}
 	
 	/**
 	* find
