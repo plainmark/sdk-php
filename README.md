@@ -68,6 +68,12 @@ $id = $plainmark->submitAppDF('App Vendor', '/path/to/description.appdf');
 $app = $plainmark->getApp($id);
 ```
 
+### Download the APK
+To download the APK file of the analyzed application:
+```
+$content = $plainmark->download($id);
+```
+
 ### Print application's rating and annotation
 ```
 $score = $plainmark->getScore($app);

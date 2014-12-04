@@ -196,6 +196,31 @@ class Plainmark {
 	}
 
 	/**
+	* download
+	* 
+	* Retrieves the APK file content from the Plainmark analytical engine. This method
+	* implements the Plainmark API "Downloading APK file" call (see the
+	* API documentation for details).
+	*
+	* @param string $id Application id
+	*
+	* @return Contents of the APK file
+	*/
+	function download($id) {
+
+		$context  = stream_context_create(array('http' => array(
+			'method' => 'GET',
+			'header'=> "Authorization: Basic {$this->credentials}\r\n"
+		)));
+
+		$content = file_get_contents($this->host . "/app/{$id}/apk", false, $context);
+		if (!$content)
+			throw new Exception("Can't download APK file for app #{$id}");
+		return $content;
+
+	}
+
+	/**
 	* getScore
 	*
 	* Calculates the score (i.e. quality) for an application.
